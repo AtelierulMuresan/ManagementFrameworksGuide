@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Management Frameworks Guide</title>
+  <meta name="description" content="A practical, modern guide to 14 essential management frameworks — SMART goals, OKRs, KPIs, SWOT, Scrum, RACI, Theory of Constraints and more — with step-by-step guidance, checklists and resources.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpath d='M8 22V10l8 7 8-7v12' stroke='white' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>try{var t=localStorage.getItem("mfg-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="home" data-root="">
+  <div class="scroll-progress"></div>
+  <div class="bg-blobs"><span></span><span></span><span></span></div>
+
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-logo">M</span>Frameworks<span class="grad-text">Guide</span></a>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#frameworks" class="active">Frameworks</a>
+        <a href="#picker-section">Which one?</a>
+        <select class="jump" id="jump" aria-label="Jump to framework"></select>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">✨ <b>14 frameworks</b> · checklists · real-world examples</span>
+          <h1>Manage smarter with the <span class="grad-text">right framework</span>.</h1>
+          <p class="lead">A practical field guide to the management frameworks that high-performing teams actually use — what they are, how to apply them step by step, interactive checklists, curated resources and the companies that rely on them.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#frameworks">Browse frameworks →</a>
+            <a class="btn btn-ghost" href="#picker-section">Help me choose</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><b id="statCount">14</b><span>Frameworks</span></div>
+            <div class="stat"><b id="statChecks">0</b><span>Checklist items</span></div>
+            <div class="stat"><b id="statCompanies">0</b><span>Company examples</span></div>
+          </div>
+        </div>
+        <div class="hero-art reveal" id="heroArt"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="frameworks">
+      <div class="section-head">
+        <div>
+          <h2>Table of contents</h2>
+          <p>Every framework has its own page with a detailed description, how-to steps, a checklist, documentation, videos and company examples.</p>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="search" type="search" placeholder="Search frameworks…  (press / to focus)" aria-label="Search frameworks">
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty">No frameworks match your search.</p>
+    </section>
+
+    <section class="section container" id="picker-section">
+      <div class="section-head">
+        <div>
+          <h2>Which framework do I need?</h2>
+          <p>Start from the problem you’re facing — then dive into the recommended frameworks.</p>
+        </div>
+      </div>
+      <div class="picker" id="picker"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Management Frameworks Guide · Built for learning & practice</span>
+      <span>Content compiled from public sources — see each framework’s documentation links.</span>
+    </div>
+  </footer>
+  <button class="icon-btn to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/graphics.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
